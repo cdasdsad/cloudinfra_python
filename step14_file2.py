@@ -16,3 +16,13 @@ if __name__ == "__main__" :
     with open(letter_path, "r", encoding = "utf-8") as f2 :
            result2 = f2.read()
            print(result2) 
+
+    letter_path2 = os.path.join(os.getcwd(), "letter.txt2")
+    
+    # 'a'는 내용 추가 (기존내용에서)
+    with open(letter_path2, "a", encoding="utf-8") as f :
+        f.write("To my Friend \n")
+        f.write("Hello \n")
+        f.write("Bye \n")
+
+    
